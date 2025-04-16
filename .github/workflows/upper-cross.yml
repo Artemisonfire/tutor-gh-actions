@@ -8,7 +8,9 @@ on:
   workflow_dispatch: # manual
 
 jobs:
-  capture:
+  cross:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     defaults:
       run:
